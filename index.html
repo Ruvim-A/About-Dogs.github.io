@@ -3,35 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Dogs</title>
+  <title>About Puppies</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
       color: #fff;
     }
 
-    header {
-      width: 100%;
-      height: 300px;
+    header.site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+    }
+
+    .site-header h1 {
+      font-size: 24px;
+      color: #f0c674;
+      margin: 0;
+    }
+
+    .search-box input[type="text"] {
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      width: 200px;
+    }
+
+    .search-box button {
+      padding: 8px 12px;
+      background-color: #a08a65;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+
+    .banner {
       background: url('images/Banner.jpeg') no-repeat center center;
       background-size: cover;
+      height: 300px;
+      width: 100%;
     }
 
     .dog-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding: 30px;
     }
 
     .dog-card {
-      background: #1e1e1e;
+      background-color: #1e1e1e;
       border-radius: 10px;
       overflow: hidden;
-      text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      text-align: center;
     }
 
     .dog-card img {
@@ -41,53 +72,59 @@
     }
 
     .dog-card h2 {
-      margin: 10px 0 5px;
-      font-size: 18px;
+      margin: 10px 0 0;
     }
 
     .dog-card p {
+      padding: 0 10px 10px;
       font-size: 14px;
-      margin: 0 0 10px;
       color: #bbb;
     }
 
-    .dog-card button {
+    .dog-card a {
+      display: inline-block;
       margin-bottom: 15px;
       padding: 8px 16px;
-      border: none;
       background-color: #a08a65;
       color: white;
+      text-decoration: none;
       border-radius: 4px;
-      cursor: pointer;
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <h1>About Puppies</h1>
+    <form class="search-box" action="https://www.google.com/search" method="get" target="_blank">
+      <input type="hidden" name="q" value="site:ruvim-a.github.io">
+      <input type="text" name="q" placeholder="Search this site…">
+      <button type="submit">Search</button>
+    </form>
+  </header>
 
-  <header></header>
+  <div class="banner"></div>
 
   <div class="dog-gallery">
-    <!-- Dog Cards Start -->
-    <div class="dog-card"><img src="images/10001 (100).jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10002.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10003.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10004.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10005.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10006.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10007.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10008.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10009.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10010.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10011.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10012.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10013.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10014.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10015.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10016.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10017.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <div class="dog-card"><img src="images/10018.jpeg" alt="Dog Image"><h2>Dog Breed</h2><p>press the text learn more to learn more about them.</p><button>Learn More</button></div>
-    <!-- Add the rest of the images in the same pattern -->
+    <!-- Example Cards -->
+    <div class="dog-card">
+      <img src="images/10001.jpeg" alt="Puppy 1">
+      <h2>Puppy 1</h2>
+      <p>Learn more about this breed by clicking below.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="dog-card">
+      <img src="images/10002.jpeg" alt="Puppy 2">
+      <h2>Puppy 2</h2>
+      <p>Learn more about this breed by clicking below.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="dog-card">
+      <img src="images/10003.jpeg" alt="Puppy 3">
+      <h2>Puppy 3</h2>
+      <p>Learn more about this breed by clicking below.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <!-- Repeat as needed for all your images -->
   </div>
-
 </body>
 </html>
